@@ -9,7 +9,7 @@ int main() {
     cin >> hora;
     
     if (hora < 12) {
-        cout << "Buenos días";
+        cout << "Buenos dÃ­as";
         break;
     } else if (hora > 11 && hora <= 18) {
         cout << "Buenas tardes";
