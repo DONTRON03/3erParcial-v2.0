@@ -6,19 +6,35 @@ int main() {
     cout << "Ingresa el numero de la carta: \n";
     cin >> carta;
 
-    if(carta == 1){
+    switch(carta){
+        case 1:
         cout << "AS";
-    } else if (carta == 10){
+        break;
+        case 10:
         cout << "SOTA";
-    } else if (carta == 11){
+        break;
+        case 11:
         cout << "CABALLO";
-    } else if (carta == 12){
+        break;
+        case 12:
         cout << "REY";
-    } else if (carta==2||carta==3||carta==4||carta==5||carta==6||carta==7||carta==8||carta==9){
+        break;
+        
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
         cout << "No es ninguna figura ni tampoco AS";
-    } else if(carta > 12){
-        cout << "Este no es numero de una carta de la baraja española";
+        break;
+        default:
+    if(carta > 12){
+        cout << "Este no es numero de una carta de la baraja espaÃ±ola";
     }
-
+        break;
+    }
 }
 
