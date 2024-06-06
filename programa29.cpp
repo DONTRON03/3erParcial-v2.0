@@ -8,7 +8,7 @@ int main(){
     while (intentos > 0){
         cout << "Ingrese el usuario: ";
         cin >> nombre;
-        cout << "Ingrese la contraseña: ";
+        cout << "Ingrese la contraseÃ±a: ";
         cin >> contrasena;
 
         if (nombre == "AbrilLC" && contrasena == "2b18") {
@@ -24,7 +24,7 @@ int main(){
         cout << "Has agotado tus intentos. Acceso denegado.\n";
     }
     
-    // Aquí va la factura
+    // AquÃ­ va la factura
     int cantidad;
     float precio;
     float total = 0.0;
@@ -35,13 +35,13 @@ int main(){
         if(cantidad == 0){
             break;
         } else if (cantidad < 0) {
-            cout << "La cantidad debe ser un número positivo. \n";
+            cout << "La cantidad debe ser un nÃºmero positivo. \n";
             continue;
         }
         cout << "Ingrese el precio unitario: ";
         cin >> precio;
         if(precio < 0){
-            cout << "El precio debe ser un número positivo. \n";
+            cout << "El precio debe ser un nÃºmero positivo. \n";
             continue;
         }
         total += cantidad * precio;
