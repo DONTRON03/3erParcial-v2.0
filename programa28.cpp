@@ -9,7 +9,7 @@ int main() {
     while (intentos > 0) {
         cout << "Ingrese el usuario: ";
         cin >> nombre;
-        cout << "Ingrese la contraseña: ";
+        cout << "Ingrese la contraseÃ±a: ";
         cin >> contrasena;
 
         if (nombre == "AbrilLC" && contrasena == "2b18") {
