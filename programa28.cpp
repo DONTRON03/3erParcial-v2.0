@@ -25,6 +25,33 @@ int main() {
         cout << "Has agotado tus intentos. Acceso denegado.\n";
     }
 
+
+    //productos y precios
+    int cantidad;
+    float precio;
+    float total = 0.0;
+
+    while (true){
+        cout << "Ingresa la cantidad de productos: ";
+        cin >> cantidad;
+        if(cantidad == 0){
+            break;
+        } else if (cantidad < 0) {
+            cout << "La cantidad debe ser un número positivo. \n";
+            continue;
+        }
+        cout << "Ingrese el precio unitario: ";
+        cin >> precio;
+        if(precio < 0){
+            cout << "El precio debe ser un número positivo. \n";
+            continue;
+        }
+        total += cantidad * precio;
+        
+    }
+    
+    cout << "El precio total es de: " << total;
+    
     return 0;
 }
 
