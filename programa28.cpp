@@ -46,11 +46,7 @@ int main() {
             cout << "El precio debe ser un número positivo. \n";
             continue;
         }
-        total += cantidad * precio;
-        
     }
-    
-    cout << "El precio total es de: " << total;
     
     return 0;
 }
