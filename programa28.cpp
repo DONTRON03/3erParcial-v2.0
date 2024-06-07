@@ -29,7 +29,6 @@ int main() {
     //productos y precios
     int cantidad;
     float precio;
-    float total = 0.0;
 
     while (true){
         cout << "Ingresa la cantidad de productos: ";
