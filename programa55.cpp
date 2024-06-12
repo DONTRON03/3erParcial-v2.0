@@ -12,7 +12,6 @@ int main() {
      int AguaS = 300;
     int AguadeS = 320;
     int AguadeL = 350;
-    char usuario[25];
 
     cout << "Seleccione el tipo de usuario: \n";
     cout << "1) ** Administrador ** \n";
@@ -41,9 +40,6 @@ int main() {
             cout<<"<Seleccione una opcion>\n"<<endl;
             cout<<"1)Modifcar datos personales\n"<<"2)Mostrar mis vendedore recomendados\n"<<"3)Recomendar vendedor\n"<<"4)Ver todos los productos a la venta\n"<<"5)Ver todos los productos de los vendedores\n";
             cout<<"6)Valorar un producto\n"<<"7)Poner a la venta  un producto\n"<<"8)Desconectarse\n"<<"0)Salir\n"<<endl;
-                   default:
-                    cout << "Opción no válida\n";
-                }
             break;
         case 3:
              cout << "Usted accedio como anonimo" << endl;
