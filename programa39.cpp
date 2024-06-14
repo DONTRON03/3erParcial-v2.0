@@ -2,41 +2,26 @@
 #include <iostream>
 
 int main() {
-    int acum = 0;
-    int acum2 = 0;
-    int t;
+    int tamaño;
 
-    std::cout << "Digite el tamaño del primer vector (arreglo): ";
-    std::cin >> t;
+    cout << "Ingrese el número de posiciones: ";
+    cin >> tamaño;
+    int numeros[tamaño];
 
-    int vector[t];
-    for (int i = 1; i <= t; ++i) {
-        int num;
-        std::cout << "Digite un número: ";
-        std::cin >> num;
-        vector[i] = num;
-        acum += vector[i];
+    int positivos = 0;
+    int negativos = 0;
+    
+    for (int i = 0; i <= tamaño; ++i) {
+        cout << "Ingrese el número en la posición " << i + 1 << ": ";
+        cin >> numeros[i];
+        if (numeros[i] > 0) {
+            positivos++;
+        } else if (numeros[i] < 0) {
+            negativos++;
+        }
     }
+     cout << "Cantidad de números positivos: " << positivos << endl;
+    cout << "Cantidad de números negativos: " << negativos << endl;
 
-    std::cout << "La suma de los elementos del primer vector es: " << acum << std::endl;
-
-    std::cout << "Digite el tamaño del segundo vector (arreglo): ";
-    std::cin >> t;
-
-    int vector2[t];
-    for (int i = 1; i <= t; ++i) {
-        int num;
-        std::cout << "Digite un número: ";
-        std::cin >> num;
-        vector2[i] = num;
-        acum2 += vector2[i];
-    }
-
-    std::cout << "La suma de los elementos del segundo vector es: " << acum2 << std::endl;
-
-    int vector3[2];
-    vector3[1] = acum + acum2;
-
-    std::cout << "El resultado de la suma es: " << vector3[1] << std::endl;
 }
 
