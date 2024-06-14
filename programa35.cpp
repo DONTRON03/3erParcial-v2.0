@@ -1,24 +1,16 @@
-// Actividad 4_ 27 de mayo del 2024 _ 3er parcial
 #include <iostream>
 
 int main() {
-    int n;
-    std::cout << "Digite el número de posiciones: ";
-    std::cin >> n;
+    std::string arreglo1[3] = {"", "fernando", "oscar"};
+    int arreglo2[3] = {74, 56, 10};
 
-    int num[n];
+      std::cout << "El dato de la posicion 1 en el arreglo 1 es: " << arreglo1[1] << std::endl;
+    std::cout << "El dato de la posicion 2 en el arreglo 1 es: " << arreglo1[2] << std::endl;
 
-    for (int i = 1; i <= n; ++i) {
-        int numero;
-        std::cout << "Digite un número para la posición " << i << ": ";
-        std::cin >> numero;
-        num[i] = numero;
-    }
+  std::cout << "El dato de la posicion 0 en el arreglo 2 es: " << arreglo2[0] << std::endl;
+    std::cout << "El dato de la posicion 1 en el arreglo 2 es: " << arreglo2[1] << std::endl;
+    std::cout << "El dato de la posicion 2 en el arreglo 2 es: " << arreglo2[2] << std::endl;
 
-    std::cout << "Los datos en las posiciones son:" << std::endl;
-    for (int i = 1; i <= n; ++i) {
-        std::cout << "El dato en la posición " << i << " es " << num[i] << std::endl;
-    }
 
 }
 
