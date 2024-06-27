@@ -4,8 +4,6 @@
 
 using namespace std;
 
-#define PI 3.1416
-
 #define COLOR_MENUONE 13
 #define COLOR_DEFAULT 15
 #define COLOR_MENUSITODOS 9
@@ -24,7 +22,7 @@ int main() {
     int h, b, b2, a;
     int opcion = 0;
     bool salir = false;
-    const int OPC = 5;
+    const int OPC = 4;
 
     do {
         limpiarPantalla();
@@ -44,8 +42,6 @@ int main() {
         cout << (opcion == 2 ? "> " : "   ") << "Rectangulo\n";
         setColor(opcion == 3 ? COLOR_SELECION : COLOR_DEFAULT);
         cout << (opcion == 3 ? "> " : "   ") << "Circulo\n";
-        setColor(opcion == 4 ? COLOR_SELECION : COLOR_DEFAULT);
-        cout << (opcion == 4 ? "> " : "   ") << "Salir\n";
         setColor(COLOR_DEFAULT);
 
         switch (_getch()) {
@@ -109,24 +105,7 @@ int main() {
                         cout << "\nPresiona cualquier tecla para continuar..." << endl;
                         _getch();
                         break;
-                        case 3:
-                        limpiarPantalla();
-
-                        setColor(COLOR_MENUSITODOS);
-                        cout << "***************************************\n";
-                        cout << "*               Circulo               *" << endl;
-                        cout << "***************************************\n";
-                        setColor(COLOR_MENUONE);
-                        cout << "Introduzca el Radio: \n";
-                        setColor(COLOR_DEFAULT);
-                        cin >> b;
-                        a = PI*(b*b);
-                        cout << "El area del circulo es: " << a << endl;
-                        setColor(COLOR_DEFAULT);
-                        cout << "\nPresiona cualquier tecla para continuar..." << endl;
-                        _getch();
-                        break;
-                    case 4:
+                    case 3:
                         salir = true;
                         break;
                 }
